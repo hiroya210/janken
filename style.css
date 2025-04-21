@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  width: 100vw;
+  height: 100vh;
+  padding: 1.6em;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  overscroll-behavior: none;
+}
+
+.modal {
+  background-color: #fff;
+  width: 375px;
+  height: fit-content;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.7rem 1.2rem;
+  align-items: center;
+  position: relative;
+  display: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.076);
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal .header-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: -webkit-fill-available;
+}
+
+.close-btn {
+  color: hsla(217, 16%, 45%, 0.471);
+  line-height: 0.4;
+  font-weight: 100;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.close-btn:hover {
+  color: hsla(217, 16%, 45%, .9);
+}
+
+.modal .rules-modal-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+.header-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} 
+
+.header-content {
+  border: .1rem solid #fff;
+  max-width: 760px;
+  width: 100%;
+  height: fit-content;
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-img,
+.score-wrapper
+ {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 130px;
+}
+
+.score-wrapper {
+  background-color: #fff;
+  font-size: 1.6rem;
+  color: hsl(229, 64%, 46%);
+  border-radius: 8px;
+  min-height: 115px;
+  min-width: 115px;
+}
+
+.score-wrapper span {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+#score {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: hsl(229, 25%, 31%);
+}
+
+@media (max-width: 476px) {
+  .header-content {
+    padding: 1rem 1.6rem;
+  }
+
+  .score-wrapper {
+    min-height: 100%;
+    font-size: 1.3rem;
+  }
+
+  #score {
+    font-size: 2.6rem;
+    padding: .8rem;
+  }
+
+  .logo-img {
+    width: 88px;
+    height: 88px;
+  }
+}
