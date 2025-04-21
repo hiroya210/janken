@@ -5,6 +5,7 @@
 body,html {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .step {
@@ -384,7 +385,7 @@ body {
   .rules-button-wrapper {
     justify-content: center;
   }
-  
+
   .content-wrapper {
     scale: .7;
   }
