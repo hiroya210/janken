@@ -153,7 +153,7 @@ body {
 
 .content-wrapper {
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,6 +239,12 @@ body {
   left: -10%;
 }
 
+.rules-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
 .rules-btn{
   color: #fff;
   border: .1rem solid #fff;
@@ -248,9 +254,7 @@ body {
   cursor: pointer;
   opacity: .8;
   transition: .2s ease;
-  float: right;
   width: 100px;
-  margin-left: auto;
 }
 
 .rules-btn:hover {
@@ -371,6 +375,16 @@ body {
 }
 
 @media (max-width: 476px) {
+  .main-content {
+    width: 100%;
+    height: fit-content;
+    padding: 6rem 0;
+  }
+
+  .rules-button-wrapper {
+    justify-content: center;
+  }
+  
   .content-wrapper {
     scale: .7;
   }
